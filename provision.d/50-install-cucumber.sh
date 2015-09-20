@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-echo 'Install Calabash for Android ...'
+echo -e "\e[43m\n                    \n   Install Calabash for Android ...\n\e[0m"
+
 su -lc /bin/bash vagrant <<EOF
   set -e
   if [[ ! -d \$HOME/.rvm ]]; then

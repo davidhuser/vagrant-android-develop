@@ -3,6 +3,8 @@ set -e
 
 ANT_VERSION=1.9.5
 
+echo -e "\e[43m\n                    \n   Install ANT ($ANT_VERSION) ...\n\e[0m"
+
 ANT_ARCHIVE_FILENAME=apache-ant-${ANT_VERSION}-bin.tar.gz
 ANT_HOME=/opt/$(echo $ANT_ARCHIVE_FILENAME | sed -e 's,-bin\.tar\.gz$,,')
 ANT_ARCHIVE_URL=https://dist.apache.org/repos/dist/release/ant/binaries/${ANT_ARCHIVE_FILENAME}

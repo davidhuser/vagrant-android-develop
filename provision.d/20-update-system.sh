@@ -3,7 +3,7 @@ set -e
 
 SOURCES_CDN=hu
 
-echo "Update system ..."
+echo -e "\e[43m\n                    \n   Update system ...\n\e[0m"
 
 [[ -f /etc/apt/sources.list.orig ]] || sed -e s,http://archive\.,http://$SOURCES_CDN.archive\., -i.orig /etc/apt/sources.list
 

@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-echo "Install Android SDK ..."
-
 ANDROID_SDK_FILENAME=android-sdk_r23.0.2-linux.tgz
+
+echo -e "\e[43m\n                    \n   Install Android SDK ($ANDROID_SDK_FILENAME) ...\n\e[0m"
 
 ANDROID_HOME=/opt/android-sdk-linux
 ANDROID_SDK_URL=http://dl.google.com/android/$ANDROID_SDK_FILENAME

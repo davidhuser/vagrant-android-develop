@@ -3,6 +3,8 @@ set -e
 
 GRADLE_ARCHIVE_FILENAME=gradle-2.2.1-bin.zip
 
+echo -e "\e[43m\n                    \n   Install GRADLE ($GRADLE_ARCHIVE_FILENAME) ...\n\e[0m"
+
 GRADLE_HOME=/opt/$(echo $GRADLE_ARCHIVE_FILENAME | sed -e 's,-bin\.zip$,,')
 GRADLE_ARCHIVE_URL=https://services.gradle.org/distributions/$GRADLE_ARCHIVE_FILENAME
 GRADLE_ARCHIVE_LOCAL_CACHE=/vagrant/cache/$GRADLE_ARCHIVE_FILENAME

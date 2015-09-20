@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+echo -e "\e[43m\n                    \n   Install JDK ...\n\e[0m"
+
 apt-get install -y openjdk-7-jdk
 
 case $(uname -i) in

@@ -3,6 +3,8 @@ set -e
 
 MAVEN_VERSION=3.2.5
 
+echo -e "\e[43m\n                    \n   Install MAVEN ($MAVEN_VERSION) ...\n\e[0m"
+
 MAVEN_ARCHIVE_FILENAME=apache-maven-${MAVEN_VERSION}-bin.tar.gz
 MAVEN_HOME=/opt/$(echo $MAVEN_ARCHIVE_FILENAME | sed -e 's,-bin\.tar\.gz$,,')
 MAVEN_ARCHIVE_URL=https://dist.apache.org/repos/dist/release/maven/maven-3/${MAVEN_VERSION}/binaries/${MAVEN_ARCHIVE_FILENAME}
