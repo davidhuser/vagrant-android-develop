@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-ANT_VERSION=1.9.4
+ANT_VERSION=1.9.5
 
 ANT_ARCHIVE_FILENAME=apache-ant-${ANT_VERSION}-bin.tar.gz
 ANT_HOME=/opt/$(echo $ANT_ARCHIVE_FILENAME | sed -e 's,-bin\.tar\.gz$,,')
