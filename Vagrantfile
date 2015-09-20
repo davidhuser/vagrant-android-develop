@@ -69,7 +69,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--vram", "48"]
 
     vb.customize ['modifyvm', :id, '--usb', 'on']
-    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'android', '--vendorid', "#{ENV['ANDROID_VENDOR_ID'] || '0x18d1'}"]
+    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'android', '--vendorid', "#{ENV['ANDROID_VENDOR_ID'] || '0x0451'}"]
   end
   #
   # View the documentation for the provider you're using for more
