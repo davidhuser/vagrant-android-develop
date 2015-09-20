@@ -46,15 +46,19 @@ Now we got the VendorId '*0x04e8*'. Set a system environment variable '*ANDROID_
 
 ``` console
 $ ANDROID_VENDOR_ID=0x04e8 vagrant reload
+
+C:\>set ANDROID_VENDOR_ID=0x04e8
 ```
 
 ## What's inside?
 
  * Git
+ * GUI
  * OpenJDK 7
  * Gradle 2.2.1
- * Maven 3.2.3
- * Ant 1.9.4
+ * Maven 3.2.5
+ * Ant 1.9.5
+ * Android Screen Monitor:
  * Android SDK with packages:
    - tools
    - platform-tools
@@ -65,4 +69,4 @@ $ ANDROID_VENDOR_ID=0x04e8 vagrant reload
    - extra-android-m2repository
    - extra-android-support
    - extra-google-m2repository
-
+ * Xfce Desktop Environment
