@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-MAVEN_VERSION=3.2.3
+MAVEN_VERSION=3.2.5
 
 MAVEN_ARCHIVE_FILENAME=apache-maven-${MAVEN_VERSION}-bin.tar.gz
 MAVEN_HOME=/opt/$(echo $MAVEN_ARCHIVE_FILENAME | sed -e 's,-bin\.tar\.gz$,,')
