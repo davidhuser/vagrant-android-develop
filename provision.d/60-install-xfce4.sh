@@ -19,3 +19,35 @@ apt-get install -y miscfiles
 apt-get install -y xfce4
 
 [[ -f /etc/X11/Xwrapper.config.orig ]] || sed -e s,allowed_users=console,allowed_users=anybody, -i.orig /etc/X11/Xwrapper.config
+
+mkdir -p /home/vagrant/Desktop/
+
+# Android Screen Monitor shortcut
+cat > /home/vagrant/Desktop/"Android Screen Monitor.desktop" <<EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Screen Monitor
+Comment=
+Exec=java -jar asm.jar
+Icon=applications-other
+Path=/opt/android-sdk-linux/ASM_2_50
+Terminal=false
+StartupNotify=false
+EOF
+chmod +x /home/vagrant/Desktop/"Android Screen Monitor.desktop"
+
+# adb kill-server && adb start-server
+cat > /home/vagrant/Desktop/"ADB restart server.desktop" <<EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ADB restart server
+Comment=
+Exec=adb kill-server && adb start-server
+Icon=applications-other
+Path=/opt/android-sdk-linux/platform-tools
+Terminal=false
+StartupNotify=false
+EOF
+chmod +x /home/vagrant/Desktop/"ADB restart server.desktop"
