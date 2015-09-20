@@ -58,7 +58,7 @@ C:\>set ANDROID_VENDOR_ID=0x04e8
  * Gradle 2.2.1
  * Maven 3.2.5
  * Ant 1.9.5
- * Android Screen Monitor:
+ * Android Screen Monitor
  * Android SDK with packages:
    - tools
    - platform-tools
