@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-SOURCES_CDN=hu
+SOURCES_CDN=ch
 
 echo -e "\e[43m\n                    \n   Update system ...\n\e[0m"
 
