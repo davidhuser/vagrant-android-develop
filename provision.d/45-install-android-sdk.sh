@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-ANDROID_SDK_FILENAME=android-sdk_r23.0.2-linux.tgz
+ANDROID_SDK_FILENAME=android-sdk_r24.4.1-linux.tgz
 
 echo -e "\e[43m\n                    \n   Install Android SDK ($ANDROID_SDK_FILENAME) ...\n\e[0m"
 
