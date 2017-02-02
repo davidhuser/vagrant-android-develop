@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-CALABASH_ANDROID_VERSION=0.5.14
+CALABASH_ANDROID_VERSION=0.9.0
 
 echo -e "\e[43m\n                    \n   Install Calabash for Android ($CALABASH_ANDROID_VERSION) ...\n\e[0m"
 
